@@ -1,0 +1,29 @@
+.containerr {
+    padding: 20px;
+    margin-left: 34px;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  img {
+    height: 300px;
+    width: 260px;
+  }
+  
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .form-inline {
+    padding: 20px;
+  }
+  
+  .form-control {
+    margin-right: 20px;
+    width: 500px;
+  }
+  

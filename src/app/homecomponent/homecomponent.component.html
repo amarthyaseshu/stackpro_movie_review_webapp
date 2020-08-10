@@ -1,0 +1,55 @@
+<div>
+    <form class="form-inline justify-content-center ">
+      <input class="form-control " type="text" placeholder="Search" aria-label="Search" [(ngModel)]="moviename"
+        (input)="Search()">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="search-data">
+    <div class="container">
+      <div class="row">
+        <div class="card" *ngFor="let movie of movies" style="width: 18rem;">
+          <div class="row">
+            <div class="col-md-12 spacer">
+              <img src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" class="card-img-top" alt="..."
+                style="width: 100px height=100px;" />
+              <div class="card-body">
+                <h4 class="card-title">TITTLE : {{ movie.title }}</h4>
+                <h4 class="card-title">POPULARITY : {{ movie.popularity }}</h4>
+                <h4 class="card-title">
+                  RELEASE DATE : {{ movie.release_date }}
+                </h4>
+                <h4>DESCRIPTION :</h4>
+                <p class="card-text">{{ movie.overview }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containerr">
+    <div class="containerr">
+  
+      <div class="row">
+        <div class="card" *ngFor="let movie of image" style="width: 18rem;">
+          <div class="row">
+            <div class="col-md-12 spacer">
+              <img src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" class="card-img-top" alt="..."
+                style="width: 100px height=100px;" />
+              <div class="card-body">
+                <h4 class="card-title">TITTLE : {{ movie.title }}</h4>
+                <h4 class="card-title">POPULARITY : {{ movie.popularity }}</h4>
+                <h4 class="card-title">
+                  RELEASE DATE : {{ movie.release_date }}
+                </h4>
+                <h4>DESCRIPTION :</h4>
+                <p class="card-text">{{ movie.overview }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
